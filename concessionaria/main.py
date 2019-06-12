@@ -161,7 +161,6 @@ def reservado(id_carro):
         nome = request.form.get('nome')
         cpf = request.form.get('cpf')
         email = request.form.get('email')
-        telefone = request.form.get('telefone')
         if (nome != "" and cpf != "" and email != ""):
             sql_seta_cliente(cursor, conn, nome, cpf, email)
             conn = mysql.connect()
